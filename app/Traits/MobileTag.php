@@ -90,6 +90,12 @@ trait MobileTag {
         // default setting
         $tag_count = count($tag_array);
         $img_path = "template/mobile/etisalat_canvas_blank.jpg";
+
+        if($carrier_array[0]=='du'){
+
+          $img_path = "template/mobile/du_canvas_blank.jpg";
+        }
+
         $thub_size = 240;
 
          // set canvas for single
